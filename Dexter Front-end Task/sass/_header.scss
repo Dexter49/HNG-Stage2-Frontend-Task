@@ -1,0 +1,51 @@
+.header {
+  color: #fff;
+  display: flex;
+  background: #111;
+  justify-content: space-between;
+  padding: 0 2rem;
+  align-items: center;
+  height: 8.5rem;
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+    li {
+      font-weight: 500;
+      margin-right: 20px;
+      transition: 0.3s ease;
+
+      a {
+        font-size: 1.6rem;
+        color: #fff;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+
+      a:hover {
+        color: rgb(244, 135, 50);
+      }
+    }
+
+    @media (max-width: 768px) {
+      margin: 20px 0;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}

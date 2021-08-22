@@ -1,0 +1,54 @@
+.banner {
+  &__container {
+    display: flex;
+    max-width: 130rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem auto;
+    min-height: 70vh;
+    padding: 7rem 2rem;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    img {
+      height: 55rem;
+      border-radius: 5%;
+      border: 2px solid #111;
+
+      @media only screen and (max-width: 768px) {
+        height: 35rem;
+      }
+
+      @media only screen and (max-width: 480px) {
+        height: 20rem;
+      }
+    }
+  }
+
+  &__text {
+    margin-right: 3rem;
+
+    @media only screen and (max-width: 768px) {
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  h1 {
+    color: #111;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 3rem;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+}

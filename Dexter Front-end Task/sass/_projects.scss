@@ -1,0 +1,87 @@
+.projects {
+  color: #fff;
+  padding: 5rem 2rem;
+  background-color: #111;
+  position: relative;
+  margin-top: 5rem;
+  width: 100%;
+
+  h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+
+    a {
+      color: #fff;
+      padding: 1rem 0;
+      border-bottom: 2px solid #f9f9f9;
+    }
+  }
+}
+
+.composition {
+  height: 85vh;
+  max-width: 130rem;
+  position: relative;
+  border: 2px solid #fff;
+  margin: 7rem auto;
+
+  @media only screen and (max-width: 480px) {
+    height: 55vh;
+    margin: 5.5rem auto;
+  }
+
+  &__photo {
+    height: 90%;
+    border-radius: 3%;
+    position: absolute;
+    box-shadow: 0 1.5rem 4rem rgba(#111, 0.4);
+    border: 3px solid #fff;
+    z-index: 10;
+    outline-offset: 5px;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: 768px) {
+      width: 90%;
+      height: auto;
+    }
+
+    &--p1 {
+      left: 10%;
+      top: 0;
+      transform: rotate(-5deg);
+
+      @media only screen and (max-width: 768px) {
+        left: 5%;
+      }
+    }
+
+    &--p2 {
+      right: 10%;
+      top: 5rem;
+      transform: rotate(5deg);
+
+      @media only screen and (max-width: 768px) {
+        right: 5%;
+        top: 10rem;
+      }
+    }
+
+    &:hover {
+      z-index: 20;
+      outline: 7px solid #0ba0d1;
+      transform: scale(1.05) translateY(-2px);
+      box-shadow: 0 2.5rem 4rem rgba($color: #111, $alpha: 0.5);
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}

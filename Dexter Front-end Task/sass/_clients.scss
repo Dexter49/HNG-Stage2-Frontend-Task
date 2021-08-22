@@ -1,0 +1,27 @@
+.clients {
+  padding: 10rem 2rem;
+
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__top {
+    width: 85%;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5rem;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__img {
+    width: 20rem;
+    margin: 2rem 0;
+  }
+}
